@@ -77,7 +77,7 @@ if(process.env.ENV !== "DEV") {
   var header = "-----BEGIN PRIVATE KEY-----"
   var footer = "-----END PRIVATE KEY-----"
   console.log(privatekey.split(header))
-  privatekey= privatekey.split(header)[1]
+  privatekey = privatekey.split(header)[1]
   privatekey = privatekey.split(footer)[0]
   privatekey = header + "\n" + privatekey.replace(/ /g, "\n") + footer+"\n"
 
