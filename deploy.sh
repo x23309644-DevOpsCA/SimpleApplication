@@ -10,5 +10,5 @@ cd SimpleApplication/
 npm install
 echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
-# Start the application with the process name example_app using pm2
+# Start the application with the process name simple_application using pm2
 pm2 start ./bin/www --name simple_application #--env production
